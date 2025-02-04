@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>LANDING PAGE</title>
+
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Giga:wght@100..900&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+			rel="stylesheet" />
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+
+				font-family: "Lexend Giga", serif;
+			}
+
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+			}
+
+			.main {
+				/* margin: 20px; */
+
+				width: 100%;
+				height: 100%;
+
+				/* background-color: red; */
+				position: absolute;
+
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				background: linear-gradient(#f3f3f3, #fceddf);
+				background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+			}
+
+			.main img {
+				height: 660px;
+				/* width: 500px; */
+				object-fit: cover;
+
+				position: relative;
+				z-index: 9;
+			}
+
+			.text {
+				position: absolute;
+				top: 15%;
+
+				width: 50%;
+				text-align: center;
+				font-size: 25px;
+				font-weight: 900;
+				letter-spacing: -5px;
+				text-transform: uppercase;
+				z-index: 999;
+				color: #000;
+				/* background-color: red; */
+			}
+
+			.scroll-div,
+			.scroll-div1 {
+				position: absolute;
+				top: 30%;
+				width: 100%;
+				/* height: 100px; */
+				white-space: nowrap;
+				overflow-x: auto;
+				overflow-y: hidden;
+			}
+
+			.scroll-div h1 {
+				display: inline-block;
+
+				font-size: 150px;
+				text-transform: uppercase;
+				letter-spacing: -20px;
+				margin-right: 20px;
+				font-weight: 900;
+
+				animation-name: scroll;
+				animation-duration: 3s;
+				animation-timing-function: linear;
+				animation-iteration-count: infinite;
+			}
+
+			.scroll-div2 {
+				top: 50%;
+			}
+
+			.scroll-div2 h1 {
+				-webkit-text-stroke-width: 2px;
+				-webkit-text-stroke-color: black;
+				color: transparent;
+				/* mix-blend-mode: difference; */
+
+				position: relative;
+
+				z-index: 1000;
+			}
+
+			.scroll-div::-webkit-scrollbar {
+				display: none;
+			}
+
+			.scroll-div3 {
+				top: 70%;
+			}
+
+			.scroll-div3 h1 {
+				animation-direction: reverse;
+			}
+
+			@keyframes scroll {
+				0% {
+					transform: translateX(calc(-100% - 20px));
+				}
+				100% {
+					transform: translateX(0%);
+					/* transform: translateX(calc(-100% - 20px)); */
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<img
+				src="image.webp"
+				alt="main image" />
+
+			<h1 class="text">
+				We're content creation team and we're going to make some cool stuff for
+				your
+			</h1>
+
+			<div class="scroll-div scroll-div1">
+				<h1>brand</h1>
+				<h1>brand</h1>
+				<h1>brand</h1>
+				<h1>brand</h1>
+			</div>
+
+			<div class="scroll-div scroll-div2">
+				<h1>brand</h1>
+				<h1>brand</h1>
+				<h1>brand</h1>
+				<h1>brand</h1>
+			</div>
+
+			<div class="scroll-div scroll-div3">
+				<h1>brand</h1>
+				<h1>brand</h1>
+				<h1>brand</h1>
+				<h1>brand</h1>
+			</div>
+		</div>
+	</body>
+</html>
